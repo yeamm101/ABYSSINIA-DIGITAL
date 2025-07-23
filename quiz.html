@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>What Kind of Social Media User Are You?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .answers label {
+      display: block;
+      margin: 5px 0;
+      cursor: pointer;
+    }
+    #submitBtn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #result {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>What Kind of Social Media User Are You?</h1>
+  <form id="quizForm">
+    <div class="question">
+      <p>1. How often do you post on social media?</p>
+      <div class="answers">
+        <label><input type="radio" name="q1" value="Influencer" /> A. Every day – I keep my followers updated!</label>
+        <label><input type="radio" name="q1" value="Prosumer" /> B. A few times a week when I have something cool</label>
+        <label><input type="radio" name="q1" value="Consumer" /> C. Rarely, maybe once a month</label>
+        <label><input type="radio" name="q1" value="Watcher" /> D. Never — just watching is enough for me</label>
+        <label><input type="radio" name="q1" value="Ghost" /> E. I don’t even remember the last time I posted</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>2. What’s your favorite thing to do on social media?</p>
+      <div class="answers">
+        <label><input type="radio" name="q2" value="Consumer" /> A. Scroll through stories and reels</label>
+        <label><input type="radio" name="q2" value="Commenter" /> B. Like, comment, and react to posts</label>
+        <label><input type="radio" name="q2" value="Prosumer" /> C. Create content like photos, videos, or stories</label>
+        <label><input type="radio" name="q2" value="Prosumer" /> D. Share memes and funny stuff</label>
+        <label><input type="radio" name="q2" value="Ghost" /> E. Nothing really — I just check in sometimes</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>3. You see a viral video. What do you do?</p>
+      <div class="answers">
+        <label><input type="radio" name="q3" value="Consumer" /> A. Watch it and move on</label>
+        <label><input type="radio" name="q3" value="Commenter" /> B. Like and leave a funny comment</label>
+        <label><input type="radio" name="q3" value="Prosumer" /> C. Share it on your story or page</label>
+        <label><input type="radio" name="q3" value="Influencer" /> D. Recreate it or make your own version</label>
+        <label><input type="radio" name="q3" value="Ghost" /> E. Nothing — I might not even watch it</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>4. If someone checks your profile, what will they see?</p>
+      <div class="answers">
+        <label><input type="radio" name="q4" value="Influencer" /> A. A full content gallery with highlights and bio</label>
+        <label><input type="radio" name="q4" value="Prosumer" /> B. Some posts and stories here and there</label>
+        <label><input type="radio" name="q4" value="Ghost" /> C. A blank profile or just one old pic</label>
+        <label><input type="radio" name="q4" value="Consumer" /> D. A mix of random shared things</label>
+        <label><input type="radio" name="q4" value="Commenter" /> E. Only likes and comments on others' content</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>5. You’re invited to join a trend. What’s your response?</p>
+      <div class="answers">
+        <label><input type="radio" name="q5" value="Influencer" /> A. I started it 😎</label>
+        <label><input type="radio" name="q5" value="Prosumer" /> B. I'm in! I love joining trends</label>
+        <label><input type="radio" name="q5" value="Watcher" /> C. I'll watch others first</label>
+        <label><input type="radio" name="q5" value="Commenter" /> D. I’ll just like and support it</label>
+        <label><input type="radio" name="q5" value="Ghost" /> E. Nah, I’ll skip it</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>6. How do you feel when you get likes or followers?</p>
+      <div class="answers">
+        <label><input type="radio" name="q6" value="Influencer" /> A. I live for them! 🥳</label>
+        <label><input type="radio" name="q6" value="Prosumer" /> B. It’s nice, but not a big deal</label>
+        <label><input type="radio" name="q6" value="Consumer" /> C. I barely notice</label>
+        <label><input type="radio" name="q6" value="Watcher" /> D. I don’t check</label>
+        <label><input type="radio" name="q6" value="Ghost" /> E. I don’t have any because I don’t post</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>7. Your phone says you spent 4 hours today on social media. What do you say?</p>
+      <div class="answers">
+        <label><input type="radio" name="q7" value="Influencer" /> A. Just 4? That’s low 😅</label>
+        <label><input type="radio" name="q7" value="Prosumer" /> B. Sounds about right</label>
+        <label><input type="radio" name="q7" value="Consumer" /> C. Really? That’s a lot</label>
+        <label><input type="radio" name="q7" value="Watcher" /> D. Nah, most of that was YouTube or chatting</label>
+        <label><input type="radio" name="q7" value="Ghost" /> E. Impossible — I don’t even open those apps much</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>8. Which caption would you use most often?</p>
+      <div class="answers">
+        <label><input type="radio" name="q8" value="Influencer" /> A. “New drop 🚀 Check it out!”</label>
+        <label><input type="radio" name="q8" value="Prosumer" /> B. “Here’s a vibe ”</label>
+        <label><input type="radio" name="q8" value="Commenter" /> C. “LOL” or “Can’t stop laughing 😂”</label>
+        <label><input type="radio" name="q8" value="Watcher" /> D. “Just watching from the sidelines 👀”</label>
+        <label><input type="radio" name="q8" value="Ghost" /> E. “No caption needed” or I don't post</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>9. You see a comment section full of drama. What do you do?</p>
+      <div class="answers">
+        <label><input type="radio" name="q9" value="Watcher" /> A. Grab popcorn and read everything</label>
+        <label><input type="radio" name="q9" value="Commenter" /> B. Add your own opinion</label>
+        <label><input type="radio" name="q9" value="Prosumer" /> C. Screenshot and post it on your story</label>
+        <label><input type="radio" name="q9" value="Consumer" /> D. Ignore it</label>
+        <label><input type="radio" name="q9" value="Ghost" /> E. Report or scroll away</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>10. Which sentence describes you best?</p>
+      <div class="answers">
+        <label><input type="radio" name="q10" value="Influencer" /> A. I create content and love to inspire others</label>
+        <label><input type="radio" name="q10" value="Prosumer" /> B. I enjoy both watching and creating sometimes</label>
+        <label><input type="radio" name="q10" value="Consumer" /> C. I mostly consume and interact with posts</label>
+        <label><input type="radio" name="q10" value="Watcher" /> D. I’m just here for fun and memes</label>
+        <label><input type="radio" name="q10" value="Ghost" /> E. I have social media, but I barely use it</label>
+      </div>
+    </div>
+
+    <button type="button" id="submitBtn">Submit</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    const results = {
+      Influencer: {
+        title: "Influencer 🌟",
+        description:
+          "You’re a Digital Star! You love creating content and inspiring your followers. Your energy lights up the feed!",
+        tips: [
+          "Remember to take breaks to avoid burnout—your mental health matters just as much as your follower count.",
+          "Be authentic and share the real you, not just the highlight reel.",
+          "Balance online popularity with meaningful offline connections.",
+        ],
+      },
+      Prosumer: {
+        title: "Prosumer 🔄",
+        description:
+          "You’re a Balanced Creator and Consumer! You enjoy both making and enjoying content, which keeps your social media life fresh and engaging.",
+        tips: [
+          "Keep an eye on your screen time and take breaks when needed.",
+          "Try to diversify the content you create to explore new skills and interests.",
+          "Don’t feel pressured to post constantly—quality beats quantity.",
+        ],
+      },
+      Consumer: {
+        title: "Consumer 👀",
+        description:
+          "You’re a Chill Observer! You mostly enjoy scrolling and watching, staying informed quietly.",
+        tips: [
+          "Don’t hesitate to join conversations or share your thoughts occasionally—it helps you connect more.",
+          "Avoid long passive scrolling sessions to protect your mental well-being.",
+          "Set limits on your daily social media time to keep balance.",
+        ],
+      },
+      Commenter: {
+        title: "Commenter 💬",
+        description:
+          "You’re an Engaged Reactor! You bring energy to posts with your comments and reactions, making social media lively.",
+        tips: [
+          "Always aim to keep your comments positive and respectful.",
+          "Try sharing your own posts sometimes to add your unique voice.",
+          "Be mindful of online arguments—choose your battles wisely to avoid stress.",
+        ],
+      },
+      Watcher: {
+        title: "Watcher 🎥",
+        description:
+          "You’re a Silent Explorer! You observe and learn but rarely interact openly.",
+        tips: [
+          "Engage occasionally by liking or commenting to build connections.",
+          "Balance your online activity with offline hobbies and friendships.",
+          "Don’t be afraid to express yourself—you might be pleasantly surprised!",
+        ],
+      },
+      Ghost: {
+        title: "Ghost 👻",
+        description:
+          "You’re a Quiet Presence! You prefer privacy and minimal online footprints.",
+        tips: [
+          "If you want, try sharing small moments with close friends to feel more connected.",
+          "Stay aware of online opportunities (like learning or networking) you might miss.",
+          "Always prioritize your privacy and comfort—social media is yours to use how you want.",
+        ],
+      },
+    };
+
+    document.getElementById("submitBtn").addEventListener("click", () => {
+      const formData = new FormData(document.getElementById("quizForm"));
+      const counts = {};
+      for (const [_, value] of formData.entries()) {
+        counts[value] = (counts[value] || 0) + 1;
+      }
+      const topType = Object.entries(counts).sort((a, b) => b[1] - a[1])[0][0];
+      const resultData = results[topType];
+
+      const resultDiv = document.getElementById("result");
+      resultDiv.innerHTML = `<h2>${resultData.title}</h2>
+        <p>${resultData.description}</p>
+        <ul>${resultData.tips.map((tip) => `<li>${tip}</li>`).join("")}</ul>`;
+    });
+  </script>
+</body>
+</html>
