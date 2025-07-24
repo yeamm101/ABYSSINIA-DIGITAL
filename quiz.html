@@ -8,18 +8,18 @@
     body {
       font-family: Arial, sans-serif;
       padding: 20px;
-      background-color: #f9f9f9;
-      color: #333;
+      background-color: #1B1216;
+      color: #FBE5D6;
     }
-    h1 {
-      text-align: center;
-    }
+    
     .question {
       margin-bottom: 20px;
+      text-align: justify;
+      margin-top: 70px;
     }
     .answers label {
       display: block;
-      margin: 5px 0;
+      margin: 5px;
       cursor: pointer;
     }
     #submitBtn {
@@ -28,17 +28,71 @@
       padding: 10px 20px;
       font-size: 16px;
       cursor: pointer;
+      background-color: #785e1e;
+      color: #ddd0c3;
+      border: none;
     }
     #result {
       margin-top: 30px;
-      padding: 20px;
-      background-color: #fff;
-      border: 1px solid #ccc;
+      padding: 50px;
+      background-color: #E9C983;
+      color: #1B1216;
+      border-radius: 63px;
+      font-family: sans-serif;
     }
+    .qui {
+        background-color: #785E1E;
+        color: #ddd0c3;
+        border: none;
+      }
   </style>
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/logo.png" />
+  
 </head>
 <body>
-  <h1>What Kind of Social Media User Are You?</h1>
+   <div class="container head">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 mb-auto">
+        <a
+          href="index.html"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+            <use xlink:href="#bootstrap"><img class="bi me-2" width="40" height="32" aria-hidden="true" src="images/logo.png" alt=""></use>
+          </svg>
+          <span class="fs-4">Abyssinia Digital</span>
+        </a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link" aria-current="page"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="quiz.html" class="nav-link active">Quiz</a>
+          </li>
+          <li class="nav-item">
+            <a href="types.html" class="nav-link">Types</a>
+          </li>
+          <li class="nav-item">
+            <a href="funFact.html" class="nav-link">Fun facts</a>
+          </li>
+          <li class="nav-item">
+            <a href="aboutUs.html" class="nav-link">About</a>
+          </li>
+        </ul>
+      </header>
+    </div>
+    <div class="container-xxl quiz">
+      <h1 class="fs-1">What Kind of Social Media User Are You?</h1>
   <form id="quizForm">
     <div class="question">
       <p>1. How often do you post on social media?</p>
@@ -150,10 +204,34 @@
       </div>
     </div>
 
-    <button type="button" id="submitBtn">Submit</button>
+    <button type="button" id="submitBtn" class="btn btn-lg btn-light fw-bold">Submit</button>
   </form>
 
   <div id="result"></div>
+   <footer class="text-50 cen">
+        <p>
+          <a target="_blank" href="Abyssiniadigitals@gmail.com" class="text-white">Email</a> us,
+          Join us on
+          <a target="_blank" href="https://t.me/abyssiniadigital_2025" class="text-white"
+            >Telegram</a
+          >,
+          <a
+            target="_blank"
+            href="https://www.tiktok.com/@youthambassodors_2025"
+            class="text-white"
+            >TikTok</a
+          >
+          and
+          <a
+            target="_blank"
+            href="https://www.instagram.com/abyssiniadigital.eng/"
+            class="text-white"
+            >Instagram</a
+          >.
+        </p>
+      </footer>
+    </div>
+  
 
   <script>
     const results = {
